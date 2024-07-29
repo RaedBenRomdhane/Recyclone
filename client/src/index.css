@@ -1,0 +1,456 @@
+body {
+  background-image: url('src/assets/10330757-green-recycling-round-background1.jpg'); /* Replace with your image path */
+  background-size: cover; /* Ensures the image covers the entire background */
+  background-position: center; /* Centers the image horizontally and vertically */
+  /* Optional: Additional styles */
+  color: rgb(0, 0, 0); /* Example text color */
+  font-family: Arial, sans-serif; /* Example font stack */
+  padding: 30px;
+}
+
+body {
+  background-color: rgb(255, 255, 255);
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  font-family: Arial, sans-serif;
+}
+
+/* nav */
+.topnav {
+  background-color: #333;
+  overflow: hidden;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: green;
+  color: white;
+}
+
+
+/* ### Home ### */
+.entry_container{
+ margin-top: 50px;
+}
+/* General styling for the paragraph */
+.entry_text{
+  font-family: 'Arial', sans-serif;  
+  font-size: 18px;                  
+  color: #333;                     
+  line-height: 1.5;                
+  text-align: center;               
+  margin: 20px auto;                
+  max-width: 600px;                 
+  padding: 10px 20px;               
+  border: 2px solid #4CAF50;        
+  border-radius: 8px;              
+  background-color: #f9f9f9;       
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+/* Styling for specific text within the paragraph */
+.entry_text {
+  color: #4CAF50;                   
+  font-weight: bold;                
+}
+
+/*cards*/
+.card_img{
+  width: 50%;
+  height: auto;
+}
+
+.card_content{
+  padding:16px;
+}
+.card_content h3{
+  font-size: 28px;
+  margin-bottom: 8px;
+}
+.card_content p{
+  color :#666;
+  font-size:15px;
+  line-height: 1.3;
+}
+
+.card_button{
+  display: inline-block;
+  padding: 8px 16px;
+  background-color:  rgb(0, 184, 0);
+  text-decoration: none;
+  border-radius: 4px;
+  margin-top: 16px;
+  color: #f9f9f9;
+}
+
+
+
+
+
+/* ### user interface ### */
+/* Style for the container image-uploader */
+/*.image-uploader {
+  max-width: 500px;
+  margin: 50px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: #f9f9f9e5;
+  text-align: center;
+}
+
+
+.image-uploader h1 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #333;
+}
+
+
+.image-uploader form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.image-uploader input[type="file"] {
+  margin-bottom: 20px;
+}
+
+
+.image-uploader button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.image-uploader button:hover {
+  background-color: #0056b3;
+}
+
+
+.image-uploader p {
+  margin-top: 20px;
+  font-size: 16px;
+  color: #333;
+}*/
+
+/*drag and drop */
+.Drop_Container{
+  max-width: 500px;
+  margin: 50px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: #f9f9f9;
+  text-align: center;
+}
+.dropzone{
+  border-radius: 20px;
+  border: 2px dashed black;
+  padding: 20px;
+  background-color: rgb(230, 230, 230);
+
+}
+
+.error{
+  color: red;
+  list-style-type: none; /* Remove default bullets or numbers */
+  padding: 0; /* Remove default padding */
+  margin: 0; /* Remove default margin */
+}
+
+/*loader*/
+.loader-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; /* Center vertically on the page */
+}
+
+.loader {
+  border: 8px solid #f3f3f3; /* Light grey */
+  border-top: 8px solid #3498db; /* Blue */
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 1s linear infinite; /* Spin animation */
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/*image display*/
+.image-container {
+  margin: 30px;
+  display: grid;
+  place-items: center;
+  justify-content: center;
+  align-items: center;
+  /*height: 50vh;*/ /* Adjust this based on your container height */
+}
+
+.image-container img {
+  max-height: 300px;
+  width: auto;
+  height: auto;
+}
+.image_preview{
+  text-align: center;
+}
+
+/* stats */
+.container {
+  max-width: 95%;
+  display: flex;
+  width: 95%;
+  max-width: 100vw; /* Limit container width to viewport width */
+  height: 350px; /* Set the desired height here */
+  overflow-x: auto; /* Enable horizontal scrolling if content overflows */
+  margin:  30px;/*20px*/
+  padding:  auto ;
+}
+
+
+.area {
+  width: auto; /* 300px Set a specific width */
+  height : auto;
+  max-width: 100%; /* Optionally, set a maximum width relative to its container */
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #ccc; /* Optional: for visual separation */
+  background-color: #f7f7f7; /* Optional: for visual distinction */
+  border-radius: 10px;
+  margin: 10px;
+}
+
+
+.area:nth-child(odd) {
+  background-color: #f0f0f0; /* Optional: alternate background for distinction */
+}
+
+
+/* previw cards */
+.cards{
+  display: flex;
+  margin: 30px;
+  justify-content: center; /* Horizontally center content */
+  align-items: center; /* Vertically center content */
+  flex-wrap: wrap;
+}
+.card{
+  border: 1px solid  rgba(0, 0, 0, 0.164);
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.164);
+  padding: 20px;
+  margin: 30px;
+  text-align: center;
+  width: 300px;
+  height: auto; /*350px;*/
+  display: inline-block;
+  background-color: rgb(255, 255, 255);
+  overflow: hidden;
+}
+.card .percentage{
+  color: red;
+}
+.card .simple_list{
+  list-style-type: none; /* Remove default bullets or numbers */
+  padding: 0; /* Remove default padding */
+  margin: 0; /* Remove default margin */
+}
+
+.card .card_title{
+  color: blue;
+  text-transform: uppercase;
+}
+
+
+
+/*reload button*/
+.button_container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.button {
+  background-color: rgb(0, 184, 0);
+  color: white;
+  border: none;
+  border-radius: 12px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  margin :30px;
+  width: auto;
+}
+
+.button:hover {
+  background-color: green;
+}
+
+
+/* ### admin interface ### */
+
+/*login form*/
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f0f000;
+}
+
+.login-form {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 300px;
+}
+
+.login-form h2 {
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.form-group {
+  margin-bottom: 1rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  width: 100%;
+  padding: 0.5rem;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* show history  */
+
+.hsitory_container{
+  background-color: #f3f3f3;
+  border-radius: 50px;
+  margin: 30px;
+}
+.history_heder{  
+  background-color: grey;
+  padding :40px;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+  display: flex;
+  align-items: center;
+  
+  justify-content: center; 
+  font-family: Arial, sans-serif; 
+}
+
+.history_text{
+  margin: 0; 
+  font-size: 15px;
+  color: #343a40; 
+  font-weight: 500;
+}
+
+.history2ndcolor{
+  color: rgb(196, 10, 10);
+}
+
+
+.history_list_container{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.history_list_card{
+  width: 325px;
+  background-color: #f0f0f0;
+  border-radius: 8px;
+  overflow: hidden ;
+  box-shadow: 0px 2px spx rgba(0, 0, 0, 0.1);
+  margin: 20px;
+}
+
+.history_list_img{
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  /*min-width: 100px;
+  max-height: 300px;*/
+}
+
+.history_list_text{
+  padding: 16px;
+
+}
+.history_list_text h3{
+  font-size: 28px;
+  margin-bottom: 8px;
+  
+}
+.history_list_text p{
+  color:#666;
+  font-size: 15px;
+  line-height: 1.3;
+  
+}
+
+.history_list_btn{
+  display: inline-block;
+  padding: 8px 16px;
+  background-color: #333;
+  text-decoration: none;
+  border-radius: 4px;
+  margin-top: 16px;
+  color: #fff;
+}
