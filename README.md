@@ -5,6 +5,7 @@ Recyclone is an innovative web application that leverages artificial intelligenc
 -AI-Powered Analysis: Utilizes OpenAI's GPT-4 to accurately identify recyclable items and provide detailed recycling information.
 -User-Friendly Interface: Designed to be intuitive and easy to use.
 -Server-Side Pricing Tracker: On the server side, an Excel file is continuously updated to store the quota of each request sent to the OpenAI server during each processing, and keeps track of how much this app is spending on API requests in total.
+
 **Notes**
 -AI Model: This app is powered by OpenAI's GPT-4.
 -Database: The app is designed to connect to a MongoDB database named Waste_Sorting with two collections:
