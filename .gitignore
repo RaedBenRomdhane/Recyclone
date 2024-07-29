@@ -1,2 +1,5 @@
 #ignore env file
 server/.env
+
+#ignore all uploaded images
+server/uploads/*
