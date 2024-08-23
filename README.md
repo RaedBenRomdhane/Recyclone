@@ -17,3 +17,6 @@ Recyclone is an innovative web application that leverages artificial intelligenc
 1-Upload an image of the waste you want to analyze.
 2-The app will identify the objects in the image and provide recycling information and statistics.
 3-Admins can log in to review the response history.
+
+**Demonstration video link:**
+https://www.linkedin.com/posts/raed-ben-romdhane-aa9149291_pr%C3%A9sentation-de-recyclone-r%C3%A9volutionner-activity-7224392285868695553-4RIC?utm_source=share&utm_medium=member_desktop
